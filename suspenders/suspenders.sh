@@ -99,8 +99,7 @@ _complete_pants() {
   esac
 }
 
-_complete_susp()
-{
+_complete_susp() {
   local cur=${COMP_WORDS[COMP_CWORD]}
   local comps="flush goals targets compgen-debug"
   COMPREPLY=($(compgen -W "$comps" -- $cur))

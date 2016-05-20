@@ -130,4 +130,4 @@ if __name__ == '__main__':
 
   else:
     for i in fetch_many(results, patterns):
-      print(i)
+      print('\t'.join(str(x) for x in i))
